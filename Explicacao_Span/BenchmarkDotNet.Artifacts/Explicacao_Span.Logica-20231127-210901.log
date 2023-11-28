@@ -1,0 +1,740 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 8 benchmark(s) in total *****
+// ***** Building 4 exe(s) in Parallel: Start   *****
+// ***** Done, took 00:02:01 (121.1 sec)   *****
+// ***** Failed to build in Parallel, switching to sequential build   *****
+// ***** Done, took 00:01:56 (116.77 sec)   *****
+// Found 8 benchmarks:
+//   Logica.ComSpan: .NET 7.0(Runtime=.NET 7.0)
+//   Logica.SemSpan: .NET 7.0(Runtime=.NET 7.0)
+//   Logica.ComSpan: .NET 8.0(Runtime=.NET 8.0)
+//   Logica.SemSpan: .NET 8.0(Runtime=.NET 8.0)
+//   Logica.ComSpan: NativeAOT 7.0(Runtime=NativeAOT 7.0)
+//   Logica.SemSpan: NativeAOT 7.0(Runtime=NativeAOT 7.0)
+//   Logica.ComSpan: NativeAOT 8.0(Runtime=NativeAOT 8.0)
+//   Logica.SemSpan: NativeAOT 8.0(Runtime=NativeAOT 8.0)
+
+// **************************
+// Benchmark: Logica.ComSpan: .NET 7.0(Runtime=.NET 7.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet b36100ac-fed1-4ccb-b93c-cdebbd612855.dll --anonymousPipes 77 78 --benchmarkName Explicacao_Span.Logica.ComSpan --job ".NET 7.0" --benchmarkId 0 in /Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/b36100ac-fed1-4ccb-b93c-cdebbd612855/bin/Release/net7.0
+// Failed to set up high priority (Permission denied). In order to run benchmarks with high priority, make sure you have the right permissions.
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.10
+// Runtime=.NET 7.0.7 (7.0.723.27404), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,AES,CRC32,DP,RDM,SHA1,SHA256 VectorSize=128
+// Job: .NET 7.0
+
+OverheadJitting  1: 1 op, 158916.00 ns, 158.9160 us/op
+WorkloadJitting  1: 1 op, 177375.00 ns, 177.3750 us/op
+
+OverheadJitting  2: 16 op, 183083.00 ns, 11.4427 us/op
+WorkloadJitting  2: 16 op, 422042.00 ns, 26.3776 us/op
+
+WorkloadPilot    1: 16 op, 130167.00 ns, 8.1354 us/op
+WorkloadPilot    2: 32 op, 245666.00 ns, 7.6771 us/op
+WorkloadPilot    3: 64 op, 476416.00 ns, 7.4440 us/op
+WorkloadPilot    4: 128 op, 957209.00 ns, 7.4782 us/op
+WorkloadPilot    5: 256 op, 1892292.00 ns, 7.3918 us/op
+WorkloadPilot    6: 512 op, 3838667.00 ns, 7.4974 us/op
+WorkloadPilot    7: 1024 op, 7503708.00 ns, 7.3278 us/op
+WorkloadPilot    8: 2048 op, 15104209.00 ns, 7.3751 us/op
+WorkloadPilot    9: 4096 op, 30136791.00 ns, 7.3576 us/op
+WorkloadPilot   10: 8192 op, 60109375.00 ns, 7.3376 us/op
+WorkloadPilot   11: 16384 op, 70415708.00 ns, 4.2978 us/op
+WorkloadPilot   12: 32768 op, 24097291.00 ns, 735.3910 ns/op
+WorkloadPilot   13: 65536 op, 48146917.00 ns, 734.6637 ns/op
+WorkloadPilot   14: 131072 op, 96557334.00 ns, 736.6740 ns/op
+WorkloadPilot   15: 262144 op, 192408250.00 ns, 733.9792 ns/op
+WorkloadPilot   16: 524288 op, 384480125.00 ns, 733.3376 ns/op
+WorkloadPilot   17: 1048576 op, 769092041.00 ns, 733.4633 ns/op
+
+OverheadWarmup   1: 1048576 op, 3502958.00 ns, 3.3407 ns/op
+OverheadWarmup   2: 1048576 op, 3500834.00 ns, 3.3387 ns/op
+OverheadWarmup   3: 1048576 op, 3599833.00 ns, 3.4331 ns/op
+OverheadWarmup   4: 1048576 op, 3544417.00 ns, 3.3802 ns/op
+OverheadWarmup   5: 1048576 op, 3516958.00 ns, 3.3540 ns/op
+OverheadWarmup   6: 1048576 op, 3543000.00 ns, 3.3789 ns/op
+OverheadWarmup   7: 1048576 op, 3559083.00 ns, 3.3942 ns/op
+OverheadWarmup   8: 1048576 op, 3547000.00 ns, 3.3827 ns/op
+
+OverheadActual   1: 1048576 op, 3500667.00 ns, 3.3385 ns/op
+OverheadActual   2: 1048576 op, 3527917.00 ns, 3.3645 ns/op
+OverheadActual   3: 1048576 op, 3569542.00 ns, 3.4042 ns/op
+OverheadActual   4: 1048576 op, 3541542.00 ns, 3.3775 ns/op
+OverheadActual   5: 1048576 op, 3524000.00 ns, 3.3607 ns/op
+OverheadActual   6: 1048576 op, 3561167.00 ns, 3.3962 ns/op
+OverheadActual   7: 1048576 op, 3540208.00 ns, 3.3762 ns/op
+OverheadActual   8: 1048576 op, 3587750.00 ns, 3.4215 ns/op
+OverheadActual   9: 1048576 op, 3516500.00 ns, 3.3536 ns/op
+OverheadActual  10: 1048576 op, 3535083.00 ns, 3.3713 ns/op
+OverheadActual  11: 1048576 op, 3520750.00 ns, 3.3576 ns/op
+OverheadActual  12: 1048576 op, 3555583.00 ns, 3.3909 ns/op
+OverheadActual  13: 1048576 op, 3518583.00 ns, 3.3556 ns/op
+OverheadActual  14: 1048576 op, 3521709.00 ns, 3.3586 ns/op
+OverheadActual  15: 1048576 op, 3549750.00 ns, 3.3853 ns/op
+
+WorkloadWarmup   1: 1048576 op, 768969875.00 ns, 733.3468 ns/op
+WorkloadWarmup   2: 1048576 op, 769248042.00 ns, 733.6121 ns/op
+WorkloadWarmup   3: 1048576 op, 769371708.00 ns, 733.7300 ns/op
+WorkloadWarmup   4: 1048576 op, 768608625.00 ns, 733.0023 ns/op
+WorkloadWarmup   5: 1048576 op, 768996875.00 ns, 733.3726 ns/op
+WorkloadWarmup   6: 1048576 op, 769009375.00 ns, 733.3845 ns/op
+WorkloadWarmup   7: 1048576 op, 769153750.00 ns, 733.5222 ns/op
+WorkloadWarmup   8: 1048576 op, 769601083.00 ns, 733.9488 ns/op
+WorkloadWarmup   9: 1048576 op, 769011208.00 ns, 733.3862 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 1048576 op, 768513958.00 ns, 732.9120 ns/op
+WorkloadActual   2: 1048576 op, 769191917.00 ns, 733.5586 ns/op
+WorkloadActual   3: 1048576 op, 768925000.00 ns, 733.3040 ns/op
+WorkloadActual   4: 1048576 op, 768816125.00 ns, 733.2002 ns/op
+WorkloadActual   5: 1048576 op, 768855875.00 ns, 733.2381 ns/op
+WorkloadActual   6: 1048576 op, 768882542.00 ns, 733.2635 ns/op
+WorkloadActual   7: 1048576 op, 769401334.00 ns, 733.7583 ns/op
+WorkloadActual   8: 1048576 op, 768890291.00 ns, 733.2709 ns/op
+WorkloadActual   9: 1048576 op, 769386791.00 ns, 733.7444 ns/op
+WorkloadActual  10: 1048576 op, 768968792.00 ns, 733.3458 ns/op
+WorkloadActual  11: 1048576 op, 768674416.00 ns, 733.0650 ns/op
+WorkloadActual  12: 1048576 op, 769403834.00 ns, 733.7607 ns/op
+WorkloadActual  13: 1048576 op, 768722166.00 ns, 733.1106 ns/op
+WorkloadActual  14: 1048576 op, 769294041.00 ns, 733.6560 ns/op
+WorkloadActual  15: 1048576 op, 769025167.00 ns, 733.3996 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 1048576 op, 764978875.00 ns, 729.5407 ns/op
+WorkloadResult   2: 1048576 op, 765656834.00 ns, 730.1873 ns/op
+WorkloadResult   3: 1048576 op, 765389917.00 ns, 729.9327 ns/op
+WorkloadResult   4: 1048576 op, 765281042.00 ns, 729.8289 ns/op
+WorkloadResult   5: 1048576 op, 765320792.00 ns, 729.8668 ns/op
+WorkloadResult   6: 1048576 op, 765347459.00 ns, 729.8922 ns/op
+WorkloadResult   7: 1048576 op, 765866251.00 ns, 730.3870 ns/op
+WorkloadResult   8: 1048576 op, 765355208.00 ns, 729.8996 ns/op
+WorkloadResult   9: 1048576 op, 765851708.00 ns, 730.3731 ns/op
+WorkloadResult  10: 1048576 op, 765433709.00 ns, 729.9745 ns/op
+WorkloadResult  11: 1048576 op, 765139333.00 ns, 729.6937 ns/op
+WorkloadResult  12: 1048576 op, 765868751.00 ns, 730.3894 ns/op
+WorkloadResult  13: 1048576 op, 765187083.00 ns, 729.7393 ns/op
+WorkloadResult  14: 1048576 op, 765758958.00 ns, 730.2847 ns/op
+WorkloadResult  15: 1048576 op, 765490084.00 ns, 730.0282 ns/op
+
+// AfterAll
+// Benchmark Process 12533 has exited with code 0.
+
+Mean = 730.001 ns, StdErr = 0.069 ns (0.01%), N = 15, StdDev = 0.268 ns
+Min = 729.541 ns, Q1 = 729.848 ns, Median = 729.933 ns, Q3 = 730.236 ns, Max = 730.389 ns
+IQR = 0.388 ns, LowerFence = 729.266 ns, UpperFence = 730.818 ns
+ConfidenceInterval = [729.715 ns; 730.287 ns] (CI 99.9%), Margin = 0.286 ns (0.04% of Mean)
+Skewness = 0.14, Kurtosis = 1.71, MValue = 2
+
+// ** Remained 7 (87,5%) benchmark(s) to run. Estimated finish 2023-11-27 21:15 (0h 2m from now) **
+// **************************
+// Benchmark: Logica.SemSpan: .NET 7.0(Runtime=.NET 7.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet b36100ac-fed1-4ccb-b93c-cdebbd612855.dll --anonymousPipes 77 78 --benchmarkName Explicacao_Span.Logica.SemSpan --job ".NET 7.0" --benchmarkId 1 in /Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/b36100ac-fed1-4ccb-b93c-cdebbd612855/bin/Release/net7.0
+// Failed to set up high priority (Permission denied). In order to run benchmarks with high priority, make sure you have the right permissions.
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.10
+// Runtime=.NET 7.0.7 (7.0.723.27404), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,AES,CRC32,DP,RDM,SHA1,SHA256 VectorSize=128
+// Job: .NET 7.0
+
+OverheadJitting  1: 1 op, 170417.00 ns, 170.4170 us/op
+WorkloadJitting  1: 1 op, 143167.00 ns, 143.1670 us/op
+
+OverheadJitting  2: 16 op, 189750.00 ns, 11.8594 us/op
+WorkloadJitting  2: 16 op, 413959.00 ns, 25.8724 us/op
+
+WorkloadPilot    1: 16 op, 111125.00 ns, 6.9453 us/op
+WorkloadPilot    2: 32 op, 206000.00 ns, 6.4375 us/op
+WorkloadPilot    3: 64 op, 397458.00 ns, 6.2103 us/op
+WorkloadPilot    4: 128 op, 791292.00 ns, 6.1820 us/op
+WorkloadPilot    5: 256 op, 1608750.00 ns, 6.2842 us/op
+WorkloadPilot    6: 512 op, 3161709.00 ns, 6.1752 us/op
+WorkloadPilot    7: 1024 op, 6393833.00 ns, 6.2440 us/op
+WorkloadPilot    8: 2048 op, 12819166.00 ns, 6.2594 us/op
+WorkloadPilot    9: 4096 op, 25316958.00 ns, 6.1809 us/op
+WorkloadPilot   10: 8192 op, 50831667.00 ns, 6.2050 us/op
+WorkloadPilot   11: 16384 op, 101444917.00 ns, 6.1917 us/op
+WorkloadPilot   12: 32768 op, 36634625.00 ns, 1.1180 us/op
+WorkloadPilot   13: 65536 op, 55298417.00 ns, 843.7869 ns/op
+WorkloadPilot   14: 131072 op, 110560542.00 ns, 843.5100 ns/op
+WorkloadPilot   15: 262144 op, 221238541.00 ns, 843.9581 ns/op
+WorkloadPilot   16: 524288 op, 441430125.00 ns, 841.9611 ns/op
+WorkloadPilot   17: 1048576 op, 883182125.00 ns, 842.2681 ns/op
+
+OverheadWarmup   1: 1048576 op, 3558959.00 ns, 3.3941 ns/op
+OverheadWarmup   2: 1048576 op, 3541667.00 ns, 3.3776 ns/op
+OverheadWarmup   3: 1048576 op, 3542208.00 ns, 3.3781 ns/op
+OverheadWarmup   4: 1048576 op, 3522333.00 ns, 3.3592 ns/op
+OverheadWarmup   5: 1048576 op, 3510959.00 ns, 3.3483 ns/op
+OverheadWarmup   6: 1048576 op, 3550792.00 ns, 3.3863 ns/op
+OverheadWarmup   7: 1048576 op, 3526750.00 ns, 3.3634 ns/op
+
+OverheadActual   1: 1048576 op, 3570958.00 ns, 3.4055 ns/op
+OverheadActual   2: 1048576 op, 3526041.00 ns, 3.3627 ns/op
+OverheadActual   3: 1048576 op, 3503583.00 ns, 3.3413 ns/op
+OverheadActual   4: 1048576 op, 3587542.00 ns, 3.4213 ns/op
+OverheadActual   5: 1048576 op, 3605167.00 ns, 3.4382 ns/op
+OverheadActual   6: 1048576 op, 3501459.00 ns, 3.3393 ns/op
+OverheadActual   7: 1048576 op, 3524583.00 ns, 3.3613 ns/op
+OverheadActual   8: 1048576 op, 3526500.00 ns, 3.3631 ns/op
+OverheadActual   9: 1048576 op, 3543458.00 ns, 3.3793 ns/op
+OverheadActual  10: 1048576 op, 3504292.00 ns, 3.3420 ns/op
+OverheadActual  11: 1048576 op, 3582750.00 ns, 3.4168 ns/op
+OverheadActual  12: 1048576 op, 3520042.00 ns, 3.3570 ns/op
+OverheadActual  13: 1048576 op, 3532583.00 ns, 3.3689 ns/op
+OverheadActual  14: 1048576 op, 3538458.00 ns, 3.3745 ns/op
+OverheadActual  15: 1048576 op, 3531416.00 ns, 3.3678 ns/op
+
+WorkloadWarmup   1: 1048576 op, 882894708.00 ns, 841.9940 ns/op
+WorkloadWarmup   2: 1048576 op, 883542292.00 ns, 842.6116 ns/op
+WorkloadWarmup   3: 1048576 op, 883789625.00 ns, 842.8475 ns/op
+WorkloadWarmup   4: 1048576 op, 883830709.00 ns, 842.8866 ns/op
+WorkloadWarmup   5: 1048576 op, 883207250.00 ns, 842.2921 ns/op
+WorkloadWarmup   6: 1048576 op, 883231583.00 ns, 842.3153 ns/op
+WorkloadWarmup   7: 1048576 op, 882153125.00 ns, 841.2868 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 1048576 op, 883345542.00 ns, 842.4240 ns/op
+WorkloadActual   2: 1048576 op, 883409959.00 ns, 842.4854 ns/op
+WorkloadActual   3: 1048576 op, 883667500.00 ns, 842.7310 ns/op
+WorkloadActual   4: 1048576 op, 883031334.00 ns, 842.1243 ns/op
+WorkloadActual   5: 1048576 op, 882409541.00 ns, 841.5313 ns/op
+WorkloadActual   6: 1048576 op, 883158333.00 ns, 842.2454 ns/op
+WorkloadActual   7: 1048576 op, 883854916.00 ns, 842.9097 ns/op
+WorkloadActual   8: 1048576 op, 883287334.00 ns, 842.3684 ns/op
+WorkloadActual   9: 1048576 op, 882394833.00 ns, 841.5173 ns/op
+WorkloadActual  10: 1048576 op, 884604583.00 ns, 843.6247 ns/op
+WorkloadActual  11: 1048576 op, 882812459.00 ns, 841.9156 ns/op
+WorkloadActual  12: 1048576 op, 882788958.00 ns, 841.8932 ns/op
+WorkloadActual  13: 1048576 op, 883047542.00 ns, 842.1398 ns/op
+WorkloadActual  14: 1048576 op, 883179416.00 ns, 842.2655 ns/op
+WorkloadActual  15: 1048576 op, 884100125.00 ns, 843.1436 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 1048576 op, 879814126.00 ns, 839.0561 ns/op
+WorkloadResult   2: 1048576 op, 879878543.00 ns, 839.1176 ns/op
+WorkloadResult   3: 1048576 op, 880136084.00 ns, 839.3632 ns/op
+WorkloadResult   4: 1048576 op, 879499918.00 ns, 838.7565 ns/op
+WorkloadResult   5: 1048576 op, 878878125.00 ns, 838.1635 ns/op
+WorkloadResult   6: 1048576 op, 879626917.00 ns, 838.8776 ns/op
+WorkloadResult   7: 1048576 op, 880323500.00 ns, 839.5419 ns/op
+WorkloadResult   8: 1048576 op, 879755918.00 ns, 839.0006 ns/op
+WorkloadResult   9: 1048576 op, 878863417.00 ns, 838.1495 ns/op
+WorkloadResult  10: 1048576 op, 879281043.00 ns, 838.5477 ns/op
+WorkloadResult  11: 1048576 op, 879257542.00 ns, 838.5253 ns/op
+WorkloadResult  12: 1048576 op, 879516126.00 ns, 838.7719 ns/op
+WorkloadResult  13: 1048576 op, 879648000.00 ns, 838.8977 ns/op
+WorkloadResult  14: 1048576 op, 880568709.00 ns, 839.7758 ns/op
+
+// AfterAll
+// Benchmark Process 12537 has exited with code 0.
+
+Mean = 838.896 ns, StdErr = 0.126 ns (0.02%), N = 14, StdDev = 0.471 ns
+Min = 838.149 ns, Q1 = 838.600 ns, Median = 838.888 ns, Q3 = 839.102 ns, Max = 839.776 ns
+IQR = 0.502 ns, LowerFence = 837.847 ns, UpperFence = 839.856 ns
+ConfidenceInterval = [838.365 ns; 839.427 ns] (CI 99.9%), Margin = 0.531 ns (0.06% of Mean)
+Skewness = 0.11, Kurtosis = 2.12, MValue = 2
+
+// ** Remained 6 (75,0%) benchmark(s) to run. Estimated finish 2023-11-27 21:15 (0h 2m from now) **
+// **************************
+// Benchmark: Logica.ComSpan: .NET 8.0(Runtime=.NET 8.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet c88cee38-69d0-4677-9bcc-aefc76e4517b.dll --anonymousPipes 77 78 --benchmarkName Explicacao_Span.Logica.ComSpan --job ".NET 8.0" --benchmarkId 0 in /Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/c88cee38-69d0-4677-9bcc-aefc76e4517b/bin/Release/net8.0
+// Failed to set up high priority (Permission denied). In order to run benchmarks with high priority, make sure you have the right permissions.
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.10
+// Runtime=.NET 8.0.0 (8.0.23.53103), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,AES,CRC32,DP,RDM,SHA1,SHA256 VectorSize=128
+// Job: .NET 8.0
+
+OverheadJitting  1: 1 op, 172125.00 ns, 172.1250 us/op
+WorkloadJitting  1: 1 op, 242667.00 ns, 242.6670 us/op
+
+OverheadJitting  2: 16 op, 179250.00 ns, 11.2031 us/op
+WorkloadJitting  2: 16 op, 602334.00 ns, 37.6459 us/op
+
+WorkloadPilot    1: 16 op, 203708.00 ns, 12.7317 us/op
+WorkloadPilot    2: 32 op, 365750.00 ns, 11.4297 us/op
+WorkloadPilot    3: 64 op, 656208.00 ns, 10.2532 us/op
+WorkloadPilot    4: 128 op, 1181500.00 ns, 9.2305 us/op
+WorkloadPilot    5: 256 op, 2253375.00 ns, 8.8022 us/op
+WorkloadPilot    6: 512 op, 4457334.00 ns, 8.7057 us/op
+WorkloadPilot    7: 1024 op, 8660709.00 ns, 8.4577 us/op
+WorkloadPilot    8: 2048 op, 17277750.00 ns, 8.4364 us/op
+WorkloadPilot    9: 4096 op, 34697167.00 ns, 8.4710 us/op
+WorkloadPilot   10: 8192 op, 47307875.00 ns, 5.7749 us/op
+WorkloadPilot   11: 16384 op, 14368958.00 ns, 877.0116 ns/op
+WorkloadPilot   12: 32768 op, 28700875.00 ns, 875.8812 ns/op
+WorkloadPilot   13: 65536 op, 57279000.00 ns, 874.0082 ns/op
+WorkloadPilot   14: 131072 op, 114190417.00 ns, 871.2037 ns/op
+WorkloadPilot   15: 262144 op, 228039042.00 ns, 869.8999 ns/op
+WorkloadPilot   16: 524288 op, 455970416.00 ns, 869.6945 ns/op
+WorkloadPilot   17: 1048576 op, 911995875.00 ns, 869.7470 ns/op
+
+OverheadWarmup   1: 1048576 op, 3576458.00 ns, 3.4108 ns/op
+OverheadWarmup   2: 1048576 op, 3498375.00 ns, 3.3363 ns/op
+OverheadWarmup   3: 1048576 op, 3627875.00 ns, 3.4598 ns/op
+OverheadWarmup   4: 1048576 op, 3499125.00 ns, 3.3370 ns/op
+OverheadWarmup   5: 1048576 op, 3524875.00 ns, 3.3616 ns/op
+OverheadWarmup   6: 1048576 op, 3653666.00 ns, 3.4844 ns/op
+OverheadWarmup   7: 1048576 op, 3534709.00 ns, 3.3710 ns/op
+
+OverheadActual   1: 1048576 op, 3538875.00 ns, 3.3749 ns/op
+OverheadActual   2: 1048576 op, 3607042.00 ns, 3.4399 ns/op
+OverheadActual   3: 1048576 op, 3517292.00 ns, 3.3544 ns/op
+OverheadActual   4: 1048576 op, 3527292.00 ns, 3.3639 ns/op
+OverheadActual   5: 1048576 op, 3646917.00 ns, 3.4780 ns/op
+OverheadActual   6: 1048576 op, 3522000.00 ns, 3.3588 ns/op
+OverheadActual   7: 1048576 op, 3519709.00 ns, 3.3567 ns/op
+OverheadActual   8: 1048576 op, 3515208.00 ns, 3.3524 ns/op
+OverheadActual   9: 1048576 op, 3574833.00 ns, 3.4092 ns/op
+OverheadActual  10: 1048576 op, 3522750.00 ns, 3.3596 ns/op
+OverheadActual  11: 1048576 op, 3503542.00 ns, 3.3412 ns/op
+OverheadActual  12: 1048576 op, 3517625.00 ns, 3.3547 ns/op
+OverheadActual  13: 1048576 op, 3626583.00 ns, 3.4586 ns/op
+OverheadActual  14: 1048576 op, 3612708.00 ns, 3.4453 ns/op
+OverheadActual  15: 1048576 op, 3522500.00 ns, 3.3593 ns/op
+
+WorkloadWarmup   1: 1048576 op, 910311250.00 ns, 868.1405 ns/op
+WorkloadWarmup   2: 1048576 op, 895723583.00 ns, 854.2286 ns/op
+WorkloadWarmup   3: 1048576 op, 913143083.00 ns, 870.8411 ns/op
+WorkloadWarmup   4: 1048576 op, 913393583.00 ns, 871.0800 ns/op
+WorkloadWarmup   5: 1048576 op, 913046458.00 ns, 870.7490 ns/op
+WorkloadWarmup   6: 1048576 op, 911949791.00 ns, 869.7031 ns/op
+WorkloadWarmup   7: 1048576 op, 911573584.00 ns, 869.3443 ns/op
+WorkloadWarmup   8: 1048576 op, 911572750.00 ns, 869.3435 ns/op
+WorkloadWarmup   9: 1048576 op, 911992791.00 ns, 869.7441 ns/op
+WorkloadWarmup  10: 1048576 op, 912408083.00 ns, 870.1402 ns/op
+WorkloadWarmup  11: 1048576 op, 912241417.00 ns, 869.9812 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 1048576 op, 912358125.00 ns, 870.0925 ns/op
+WorkloadActual   2: 1048576 op, 904945916.00 ns, 863.0237 ns/op
+WorkloadActual   3: 1048576 op, 917675375.00 ns, 875.1634 ns/op
+WorkloadActual   4: 1048576 op, 910930250.00 ns, 868.7308 ns/op
+WorkloadActual   5: 1048576 op, 912729833.00 ns, 870.4470 ns/op
+WorkloadActual   6: 1048576 op, 932427375.00 ns, 889.2320 ns/op
+WorkloadActual   7: 1048576 op, 929935333.00 ns, 886.8554 ns/op
+WorkloadActual   8: 1048576 op, 914024708.00 ns, 871.6819 ns/op
+WorkloadActual   9: 1048576 op, 913828666.00 ns, 871.4949 ns/op
+WorkloadActual  10: 1048576 op, 911849083.00 ns, 869.6071 ns/op
+WorkloadActual  11: 1048576 op, 913156542.00 ns, 870.8539 ns/op
+WorkloadActual  12: 1048576 op, 912604583.00 ns, 870.3276 ns/op
+WorkloadActual  13: 1048576 op, 911577541.00 ns, 869.3481 ns/op
+WorkloadActual  14: 1048576 op, 912256708.00 ns, 869.9958 ns/op
+WorkloadActual  15: 1048576 op, 911932250.00 ns, 869.6864 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 1048576 op, 908835375.00 ns, 866.7330 ns/op
+WorkloadResult   2: 1048576 op, 901423166.00 ns, 859.6641 ns/op
+WorkloadResult   3: 1048576 op, 907407500.00 ns, 865.3712 ns/op
+WorkloadResult   4: 1048576 op, 909207083.00 ns, 867.0874 ns/op
+WorkloadResult   5: 1048576 op, 910501958.00 ns, 868.3223 ns/op
+WorkloadResult   6: 1048576 op, 910305916.00 ns, 868.1354 ns/op
+WorkloadResult   7: 1048576 op, 908326333.00 ns, 866.2475 ns/op
+WorkloadResult   8: 1048576 op, 909633792.00 ns, 867.4944 ns/op
+WorkloadResult   9: 1048576 op, 909081833.00 ns, 866.9680 ns/op
+WorkloadResult  10: 1048576 op, 908054791.00 ns, 865.9885 ns/op
+WorkloadResult  11: 1048576 op, 908733958.00 ns, 866.6362 ns/op
+WorkloadResult  12: 1048576 op, 908409500.00 ns, 866.3268 ns/op
+
+// AfterAll
+// Benchmark Process 12540 has exited with code 0.
+
+Mean = 866.248 ns, StdErr = 0.647 ns (0.07%), N = 12, StdDev = 2.240 ns
+Min = 859.664 ns, Q1 = 866.183 ns, Median = 866.685 ns, Q3 = 867.189 ns, Max = 868.322 ns
+IQR = 1.006 ns, LowerFence = 864.673 ns, UpperFence = 868.699 ns
+ConfidenceInterval = [863.378 ns; 869.118 ns] (CI 99.9%), Margin = 2.870 ns (0.33% of Mean)
+Skewness = -1.98, Kurtosis = 6.33, MValue = 2
+
+// ** Remained 5 (62,5%) benchmark(s) to run. Estimated finish 2023-11-27 21:16 (0h 1m from now) **
+// **************************
+// Benchmark: Logica.SemSpan: .NET 8.0(Runtime=.NET 8.0)
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet c88cee38-69d0-4677-9bcc-aefc76e4517b.dll --anonymousPipes 77 78 --benchmarkName Explicacao_Span.Logica.SemSpan --job ".NET 8.0" --benchmarkId 1 in /Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/c88cee38-69d0-4677-9bcc-aefc76e4517b/bin/Release/net8.0
+// Failed to set up high priority (Permission denied). In order to run benchmarks with high priority, make sure you have the right permissions.
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.13.10
+// Runtime=.NET 8.0.0 (8.0.23.53103), Arm64 RyuJIT AdvSIMD
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AdvSIMD,AES,CRC32,DP,RDM,SHA1,SHA256 VectorSize=128
+// Job: .NET 8.0
+
+OverheadJitting  1: 1 op, 178458.00 ns, 178.4580 us/op
+WorkloadJitting  1: 1 op, 177292.00 ns, 177.2920 us/op
+
+OverheadJitting  2: 16 op, 172500.00 ns, 10.7812 us/op
+WorkloadJitting  2: 16 op, 535083.00 ns, 33.4427 us/op
+
+WorkloadPilot    1: 16 op, 216750.00 ns, 13.5469 us/op
+WorkloadPilot    2: 32 op, 371250.00 ns, 11.6016 us/op
+WorkloadPilot    3: 64 op, 649959.00 ns, 10.1556 us/op
+WorkloadPilot    4: 128 op, 1170833.00 ns, 9.1471 us/op
+WorkloadPilot    5: 256 op, 2257583.00 ns, 8.8187 us/op
+WorkloadPilot    6: 512 op, 4404042.00 ns, 8.6016 us/op
+WorkloadPilot    7: 1024 op, 8794708.00 ns, 8.5886 us/op
+WorkloadPilot    8: 2048 op, 17368750.00 ns, 8.4808 us/op
+WorkloadPilot    9: 4096 op, 34669666.00 ns, 8.4643 us/op
+WorkloadPilot   10: 8192 op, 57207750.00 ns, 6.9834 us/op
+WorkloadPilot   11: 16384 op, 13767666.00 ns, 840.3116 ns/op
+WorkloadPilot   12: 32768 op, 27670500.00 ns, 844.4366 ns/op
+WorkloadPilot   13: 65536 op, 55339500.00 ns, 844.4138 ns/op
+WorkloadPilot   14: 131072 op, 110810584.00 ns, 845.4177 ns/op
+WorkloadPilot   15: 262144 op, 221182875.00 ns, 843.7457 ns/op
+WorkloadPilot   16: 524288 op, 441553083.00 ns, 842.1957 ns/op
+WorkloadPilot   17: 1048576 op, 883850542.00 ns, 842.9056 ns/op
+
+OverheadWarmup   1: 1048576 op, 3523125.00 ns, 3.3599 ns/op
+OverheadWarmup   2: 1048576 op, 3498000.00 ns, 3.3360 ns/op
+OverheadWarmup   3: 1048576 op, 3522625.00 ns, 3.3594 ns/op
+OverheadWarmup   4: 1048576 op, 3555042.00 ns, 3.3904 ns/op
+OverheadWarmup   5: 1048576 op, 3546458.00 ns, 3.3822 ns/op
+OverheadWarmup   6: 1048576 op, 3583917.00 ns, 3.4179 ns/op
+OverheadWarmup   7: 1048576 op, 3509166.00 ns, 3.3466 ns/op
+
+OverheadActual   1: 1048576 op, 3531417.00 ns, 3.3678 ns/op
+OverheadActual   2: 1048576 op, 3601458.00 ns, 3.4346 ns/op
+OverheadActual   3: 1048576 op, 3507083.00 ns, 3.3446 ns/op
+OverheadActual   4: 1048576 op, 3556708.00 ns, 3.3919 ns/op
+OverheadActual   5: 1048576 op, 3588792.00 ns, 3.4225 ns/op
+OverheadActual   6: 1048576 op, 3516667.00 ns, 3.3538 ns/op
+OverheadActual   7: 1048576 op, 3512083.00 ns, 3.3494 ns/op
+OverheadActual   8: 1048576 op, 3549708.00 ns, 3.3853 ns/op
+OverheadActual   9: 1048576 op, 3542583.00 ns, 3.3785 ns/op
+OverheadActual  10: 1048576 op, 3519250.00 ns, 3.3562 ns/op
+OverheadActual  11: 1048576 op, 3523334.00 ns, 3.3601 ns/op
+OverheadActual  12: 1048576 op, 3588916.00 ns, 3.4227 ns/op
+OverheadActual  13: 1048576 op, 3580042.00 ns, 3.4142 ns/op
+OverheadActual  14: 1048576 op, 3563584.00 ns, 3.3985 ns/op
+OverheadActual  15: 1048576 op, 3514834.00 ns, 3.3520 ns/op
+
+WorkloadWarmup   1: 1048576 op, 883800166.00 ns, 842.8575 ns/op
+WorkloadWarmup   2: 1048576 op, 883430791.00 ns, 842.5053 ns/op
+WorkloadWarmup   3: 1048576 op, 883086334.00 ns, 842.1768 ns/op
+WorkloadWarmup   4: 1048576 op, 882489166.00 ns, 841.6073 ns/op
+WorkloadWarmup   5: 1048576 op, 883093083.00 ns, 842.1832 ns/op
+WorkloadWarmup   6: 1048576 op, 884288084.00 ns, 843.3228 ns/op
+WorkloadWarmup   7: 1048576 op, 883434958.00 ns, 842.5092 ns/op
+WorkloadWarmup   8: 1048576 op, 882652000.00 ns, 841.7625 ns/op
+WorkloadWarmup   9: 1048576 op, 883372666.00 ns, 842.4498 ns/op
+WorkloadWarmup  10: 1048576 op, 883230500.00 ns, 842.3142 ns/op
+
+// BeforeActualRun
+WorkloadActual   1: 1048576 op, 882863916.00 ns, 841.9646 ns/op
+WorkloadActual   2: 1048576 op, 882759334.00 ns, 841.8649 ns/op
+WorkloadActual   3: 1048576 op, 883152834.00 ns, 842.2402 ns/op
+WorkloadActual   4: 1048576 op, 884080417.00 ns, 843.1248 ns/op
+WorkloadActual   5: 1048576 op, 884608958.00 ns, 843.6288 ns/op
+WorkloadActual   6: 1048576 op, 883737459.00 ns, 842.7977 ns/op
+WorkloadActual   7: 1048576 op, 885528000.00 ns, 844.5053 ns/op
+WorkloadActual   8: 1048576 op, 883196209.00 ns, 842.2815 ns/op
+WorkloadActual   9: 1048576 op, 882926708.00 ns, 842.0245 ns/op
+WorkloadActual  10: 1048576 op, 883447208.00 ns, 842.5209 ns/op
+WorkloadActual  11: 1048576 op, 882438334.00 ns, 841.5588 ns/op
+WorkloadActual  12: 1048576 op, 883147000.00 ns, 842.2346 ns/op
+WorkloadActual  13: 1048576 op, 883344667.00 ns, 842.4231 ns/op
+WorkloadActual  14: 1048576 op, 883311916.00 ns, 842.3919 ns/op
+WorkloadActual  15: 1048576 op, 882805875.00 ns, 841.9093 ns/op
+
+// AfterActualRun
+WorkloadResult   1: 1048576 op, 879321333.00 ns, 838.5862 ns/op
+WorkloadResult   2: 1048576 op, 879216751.00 ns, 838.4864 ns/op
+WorkloadResult   3: 1048576 op, 879610251.00 ns, 838.8617 ns/op
+WorkloadResult   4: 1048576 op, 880537834.00 ns, 839.7463 ns/op
+WorkloadResult   5: 1048576 op, 881066375.00 ns, 840.2504 ns/op
+WorkloadResult   6: 1048576 op, 880194876.00 ns, 839.4192 ns/op
+WorkloadResult   7: 1048576 op, 879653626.00 ns, 838.9031 ns/op
+WorkloadResult   8: 1048576 op, 879384125.00 ns, 838.6461 ns/op
+WorkloadResult   9: 1048576 op, 879904625.00 ns, 839.1424 ns/op
+WorkloadResult  10: 1048576 op, 878895751.00 ns, 838.1803 ns/op
+WorkloadResult  11: 1048576 op, 879604417.00 ns, 838.8561 ns/op
+WorkloadResult  12: 1048576 op, 879802084.00 ns, 839.0447 ns/op
+WorkloadResult  13: 1048576 op, 879769333.00 ns, 839.0134 ns/op
+WorkloadResult  14: 1048576 op, 879263292.00 ns, 838.5308 ns/op
+
+// AfterAll
+// Benchmark Process 12559 has exited with code 0.
+
+Mean = 838.976 ns, StdErr = 0.145 ns (0.02%), N = 14, StdDev = 0.542 ns
+Min = 838.180 ns, Q1 = 838.601 ns, Median = 838.882 ns, Q3 = 839.118 ns, Max = 840.250 ns
+IQR = 0.517 ns, LowerFence = 837.826 ns, UpperFence = 839.893 ns
+ConfidenceInterval = [838.365 ns; 839.587 ns] (CI 99.9%), Margin = 0.611 ns (0.07% of Mean)
+Skewness = 0.81, Kurtosis = 2.96, MValue = 2
+
+// ** Remained 4 (50,0%) benchmark(s) to run. Estimated finish 2023-11-27 21:16 (0h 1m from now) **
+// Build Error: Standard output: 
+  
+ Standard error: 
+   Determining projects to restore...
+/usr/local/share/dotnet/sdk/8.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(90,5): error NETSDK1204: Ahead-of-time compilation is not supported on the current platform 'osx-arm64'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/76d68e5f-e37d-4de3-90e8-cb924a3d12b3/BenchmarkDotNet.Autogenerated.csproj]
+
+// BenchmarkDotNet has failed to build the auto-generated boilerplate code.
+// It can be found in /Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/76d68e5f-e37d-4de3-90e8-cb924a3d12b3
+// Please follow the troubleshooting guide: https://benchmarkdotnet.org/articles/guides/troubleshooting.html
+
+// ** Remained 3 (37,5%) benchmark(s) to run. Estimated finish 2023-11-27 21:15 (0h 0m from now) **
+// Build Error: Standard output: 
+  
+ Standard error: 
+   Determining projects to restore...
+/usr/local/share/dotnet/sdk/8.0.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.Sdk.FrameworkReferenceResolution.targets(90,5): error NETSDK1204: Ahead-of-time compilation is not supported on the current platform 'osx-arm64'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/76d68e5f-e37d-4de3-90e8-cb924a3d12b3/BenchmarkDotNet.Autogenerated.csproj]
+
+// BenchmarkDotNet has failed to build the auto-generated boilerplate code.
+// It can be found in /Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/76d68e5f-e37d-4de3-90e8-cb924a3d12b3
+// Please follow the troubleshooting guide: https://benchmarkdotnet.org/articles/guides/troubleshooting.html
+
+// ** Remained 2 (25,0%) benchmark(s) to run. Estimated finish 2023-11-27 21:15 (0h 0m from now) **
+// Build Error: Standard output: 
+  
+ Standard error: 
+ MSBuild version 17.8.3+195e7f5a3 for .NET
+/Users/diogocsantos/.nuget/packages/microsoft.net.illink.tasks/8.0.0/build/Microsoft.NET.ILLink.targets(210,5): warning : Property 'TrimmerDefaultAction' is deprecated in .NET 7 and higher and will be ignored. Use TrimMode instead. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+  Generating native code
+/Users/diogocsantos/.nuget/packages/benchmarkdotnet/0.13.10/lib/net6.0/BenchmarkDotNet.dll : warning IL2104: Assembly 'BenchmarkDotNet' produced trim warnings. For more information see https://aka.ms/dotnet-illink/libraries [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Portability.RuntimeInformation.IsNetCore.get: 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Portability.RuntimeInformation.IsNativeAOT.get: 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Portability.RuntimeInformation.GetNetCoreVersion(): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Portability.RuntimeInformation.GetNetCoreVersion(): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Environments.CoreRuntime.TryGetVersion(Version&): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/commandlineparser/2.9.1/lib/netstandard2.0/CommandLine.dll : warning IL2104: Assembly 'CommandLine' produced trim warnings. For more information see https://aka.ms/dotnet-illink/libraries [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Running.BenchmarkPartitioner.BenchmarkRuntimePropertiesComparer.Equals(BenchmarkCase,BenchmarkCase): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Running.BenchmarkPartitioner.BenchmarkRuntimePropertiesComparer.Equals(BenchmarkCase,BenchmarkCase): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Running.BenchmarkPartitioner.BenchmarkRuntimePropertiesComparer.GetHashCode(BenchmarkCase): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Validators.ShadowCopyValidator.<>c.<Validate>b__4_1(Assembly): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/benchmarkdotnet/0.13.10/lib/net6.0/BenchmarkDotNet.dll : warning IL3053: Assembly 'BenchmarkDotNet' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Disassemblers.MonoDisassembler.Disassemble(BenchmarkCase,MonoRuntime): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Running.BuildPartition.GetResolvedAssemblyLocation(Assembly): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Running.BuildPartition.GetResolvedAssemblyLocation(Assembly): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/commandlineparser/2.9.1/lib/netstandard2.0/CommandLine.dll : warning IL3053: Assembly 'CommandLine' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Disassemblers.WindowsDisassembler.GetDisassemblerPath(String): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Diagnosers.DiagnosersLoader.LoadWindowsDiagnosers(): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Toolchains.Roslyn.Generator.<>c.<GenerateBuildScript>b__2_0(Assembly): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Toolchains.CsProj.CsProjGenerator.GetBuildArtifactsDirectoryPath(BuildPartition,String): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Code.CodeGenerator.GetShadowCopySettings(): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Toolchains.Roslyn.Builder.GetFrameworkAssembliesPaths(): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Toolchains.Roslyn.Builder.<>c.<Build>b__4_0(Assembly): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/System.Private.Xml.dll : warning IL3053: Assembly 'System.Private.Xml' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Toolchains.Roslyn.Builder.<>c.<GetMissingReferences>b__9_4(Assembly): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/microsoft.diagnostics.tracing.traceevent/3.0.2/lib/netstandard2.0/Microsoft.Diagnostics.Tracing.TraceEvent.dll : warning IL2104: Assembly 'Microsoft.Diagnostics.Tracing.TraceEvent' produced trim warnings. For more information see https://aka.ms/dotnet-illink/libraries [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/microsoft.diagnostics.runtime/2.2.332302/lib/net6.0/Microsoft.Diagnostics.Runtime.dll : warning IL3053: Assembly 'Microsoft.Diagnostics.Runtime' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/microsoft.diagnostics.tracing.traceevent/3.0.2/lib/netstandard2.0/Microsoft.Diagnostics.Tracing.TraceEvent.dll : warning IL3053: Assembly 'Microsoft.Diagnostics.Tracing.TraceEvent' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3002: Microsoft.Diagnostics.Symbols.NativeSymbolModule.MicrosoftPdbSourceFile.GetSourceFromSrcServer(): Using member 'System.Reflection.Module.FullyQualifiedName.get' which has 'RequiresAssemblyFilesAttribute' can break functionality when embedded in a single-file app. Returns <Unknown> for modules with no file path. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/microsoft.diagnostics.tracing.traceevent/3.0.2/lib/netstandard2.0/Microsoft.Diagnostics.FastSerialization.dll : warning IL2104: Assembly 'Microsoft.Diagnostics.FastSerialization' produced trim warnings. For more information see https://aka.ms/dotnet-illink/libraries [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3002: NativeDlls.LoadNative(String): Using member 'System.Reflection.Module.FullyQualifiedName.get' which has 'RequiresAssemblyFilesAttribute' can break functionality when embedded in a single-file app. Returns <Unknown> for modules with no file path. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/gee.external.capstone/2.3.0/lib/net7.0/Gee.External.Capstone.dll : warning IL3053: Assembly 'Gee.External.Capstone' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/microsoft.codeanalysis.common/4.1.0/lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll : warning IL2104: Assembly 'Microsoft.CodeAnalysis' produced trim warnings. For more information see https://aka.ms/dotnet-illink/libraries [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/microsoft.codeanalysis.common/4.1.0/lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll : warning IL3053: Assembly 'Microsoft.CodeAnalysis' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+  0  0x102753648  __assert_rtn + 72
+  1  0x10270e0f0  ___Z13dispatchApplyIRKmZ15dispatchForEachIKN6mach_o13CompactUnwind11Diff24FixupEZNK2ld16LayoutExecutable18writeCompactUnwindENSt3__14spanIhLm18446744073709551615EEEyRKNS7_13SectionLayoutEE4$_26EvNSA_IT_Lm18446744073709551615EEEmT0_EUlmE_EvOSG_SI__block_invoke + 0
+  2  0x18c2cb950  _dispatch_client_callout2 + 20
+  3  0x18c2e01a4  _dispatch_apply_invoke_and_wait + 176
+  4  0x18c2df464  _dispatch_apply_with_attr_f + 1176
+  5  0x18c2df650  dispatch_apply + 96
+  6  0x10270e398  ld::LayoutExecutable::writeContentWithoutLinkEdit(std::__1::span<unsigned char, 18446744073709551615ul>, unsigned long long) + 672
+  7  0x102714020  ld::LayoutExecutable::writeToFile(char const*) + 15248
+  8  0x1026c62e8  main + 9424
+  ld: Assertion failed: (false && "compact unwind compressed function offset doesn't fit in 24 bits"), function operator(), file Layout.cpp, line 5758.
+  clang: error: linker command failed with exit code 1 (use -v to see invocation)
+/Users/diogocsantos/.nuget/packages/microsoft.dotnet.ilcompiler/8.0.0/build/Microsoft.NETCore.Native.targets(364,5): error MSB3073: The command ""clang" "obj/Release/net8.0/osx-arm64/native/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb.o" -o "bin/Release/net8.0/osx-arm64/native/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb" -exported_symbols_list /dev/null -gz=zlib /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/sdk/libbootstrapper.o /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/sdk/libRuntime.WorkstationGC.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/sdk/libeventpipe-disabled.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/sdk/libstdc++compat.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/libSystem.Native.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/libSystem.Globalization.Native.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/libSystem.IO.Compression.Native.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/libSystem.Net.Security.Native.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/libSystem.Security.Cryptography.Native.Apple.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/libSystem.Security.Cryptography.Native.OpenSsl.a -g -Wl,-rpath,'@executable_path' -ldl -lobjc -lswiftCore -lswiftFoundation -lz -licucore -lm -L/usr/lib/swift -Wl,-segprot,__THUNKS,rx,rx -framework CoreFoundation -framework CryptoKit -framework Foundation -framework Security -framework GSS" exited with code 1. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+
+// BenchmarkDotNet has failed to build the auto-generated boilerplate code.
+// It can be found in /Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb
+// Please follow the troubleshooting guide: https://benchmarkdotnet.org/articles/guides/troubleshooting.html
+
+// ** Remained 1 (12,5%) benchmark(s) to run. Estimated finish 2023-11-27 21:14 (0h 0m from now) **
+// Build Error: Standard output: 
+  
+ Standard error: 
+ MSBuild version 17.8.3+195e7f5a3 for .NET
+/Users/diogocsantos/.nuget/packages/microsoft.net.illink.tasks/8.0.0/build/Microsoft.NET.ILLink.targets(210,5): warning : Property 'TrimmerDefaultAction' is deprecated in .NET 7 and higher and will be ignored. Use TrimMode instead. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+  Generating native code
+/Users/diogocsantos/.nuget/packages/benchmarkdotnet/0.13.10/lib/net6.0/BenchmarkDotNet.dll : warning IL2104: Assembly 'BenchmarkDotNet' produced trim warnings. For more information see https://aka.ms/dotnet-illink/libraries [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Portability.RuntimeInformation.IsNetCore.get: 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Portability.RuntimeInformation.IsNativeAOT.get: 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Portability.RuntimeInformation.GetNetCoreVersion(): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Portability.RuntimeInformation.GetNetCoreVersion(): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Environments.CoreRuntime.TryGetVersion(Version&): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/commandlineparser/2.9.1/lib/netstandard2.0/CommandLine.dll : warning IL2104: Assembly 'CommandLine' produced trim warnings. For more information see https://aka.ms/dotnet-illink/libraries [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Running.BenchmarkPartitioner.BenchmarkRuntimePropertiesComparer.Equals(BenchmarkCase,BenchmarkCase): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Running.BenchmarkPartitioner.BenchmarkRuntimePropertiesComparer.Equals(BenchmarkCase,BenchmarkCase): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Running.BenchmarkPartitioner.BenchmarkRuntimePropertiesComparer.GetHashCode(BenchmarkCase): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Validators.ShadowCopyValidator.<>c.<Validate>b__4_1(Assembly): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/benchmarkdotnet/0.13.10/lib/net6.0/BenchmarkDotNet.dll : warning IL3053: Assembly 'BenchmarkDotNet' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Disassemblers.MonoDisassembler.Disassemble(BenchmarkCase,MonoRuntime): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Running.BuildPartition.GetResolvedAssemblyLocation(Assembly): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Running.BuildPartition.GetResolvedAssemblyLocation(Assembly): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/commandlineparser/2.9.1/lib/netstandard2.0/CommandLine.dll : warning IL3053: Assembly 'CommandLine' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Disassemblers.WindowsDisassembler.GetDisassemblerPath(String): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Diagnosers.DiagnosersLoader.LoadWindowsDiagnosers(): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Toolchains.Roslyn.Generator.<>c.<GenerateBuildScript>b__2_0(Assembly): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Toolchains.CsProj.CsProjGenerator.GetBuildArtifactsDirectoryPath(BuildPartition,String): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Code.CodeGenerator.GetShadowCopySettings(): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Toolchains.Roslyn.Builder.GetFrameworkAssembliesPaths(): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Toolchains.Roslyn.Builder.<>c.<Build>b__4_0(Assembly): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/System.Private.Xml.dll : warning IL3053: Assembly 'System.Private.Xml' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3000: BenchmarkDotNet.Toolchains.Roslyn.Builder.<>c.<GetMissingReferences>b__9_4(Assembly): 'System.Reflection.Assembly.Location.get' always returns an empty string for assemblies embedded in a single-file app. If the path to the app directory is needed, consider calling 'System.AppContext.BaseDirectory'. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/microsoft.diagnostics.tracing.traceevent/3.0.2/lib/netstandard2.0/Microsoft.Diagnostics.Tracing.TraceEvent.dll : warning IL2104: Assembly 'Microsoft.Diagnostics.Tracing.TraceEvent' produced trim warnings. For more information see https://aka.ms/dotnet-illink/libraries [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/microsoft.diagnostics.runtime/2.2.332302/lib/net6.0/Microsoft.Diagnostics.Runtime.dll : warning IL3053: Assembly 'Microsoft.Diagnostics.Runtime' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/microsoft.diagnostics.tracing.traceevent/3.0.2/lib/netstandard2.0/Microsoft.Diagnostics.Tracing.TraceEvent.dll : warning IL3053: Assembly 'Microsoft.Diagnostics.Tracing.TraceEvent' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3002: Microsoft.Diagnostics.Symbols.NativeSymbolModule.MicrosoftPdbSourceFile.GetSourceFromSrcServer(): Using member 'System.Reflection.Module.FullyQualifiedName.get' which has 'RequiresAssemblyFilesAttribute' can break functionality when embedded in a single-file app. Returns <Unknown> for modules with no file path. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/microsoft.diagnostics.tracing.traceevent/3.0.2/lib/netstandard2.0/Microsoft.Diagnostics.FastSerialization.dll : warning IL2104: Assembly 'Microsoft.Diagnostics.FastSerialization' produced trim warnings. For more information see https://aka.ms/dotnet-illink/libraries [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+ILC : warning IL3002: NativeDlls.LoadNative(String): Using member 'System.Reflection.Module.FullyQualifiedName.get' which has 'RequiresAssemblyFilesAttribute' can break functionality when embedded in a single-file app. Returns <Unknown> for modules with no file path. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/gee.external.capstone/2.3.0/lib/net7.0/Gee.External.Capstone.dll : warning IL3053: Assembly 'Gee.External.Capstone' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/microsoft.codeanalysis.common/4.1.0/lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll : warning IL2104: Assembly 'Microsoft.CodeAnalysis' produced trim warnings. For more information see https://aka.ms/dotnet-illink/libraries [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+/Users/diogocsantos/.nuget/packages/microsoft.codeanalysis.common/4.1.0/lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll : warning IL3053: Assembly 'Microsoft.CodeAnalysis' produced AOT analysis warnings. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+  0  0x102753648  __assert_rtn + 72
+  1  0x10270e0f0  ___Z13dispatchApplyIRKmZ15dispatchForEachIKN6mach_o13CompactUnwind11Diff24FixupEZNK2ld16LayoutExecutable18writeCompactUnwindENSt3__14spanIhLm18446744073709551615EEEyRKNS7_13SectionLayoutEE4$_26EvNSA_IT_Lm18446744073709551615EEEmT0_EUlmE_EvOSG_SI__block_invoke + 0
+  2  0x18c2cb950  _dispatch_client_callout2 + 20
+  3  0x18c2e01a4  _dispatch_apply_invoke_and_wait + 176
+  4  0x18c2df464  _dispatch_apply_with_attr_f + 1176
+  5  0x18c2df650  dispatch_apply + 96
+  6  0x10270e398  ld::LayoutExecutable::writeContentWithoutLinkEdit(std::__1::span<unsigned char, 18446744073709551615ul>, unsigned long long) + 672
+  7  0x102714020  ld::LayoutExecutable::writeToFile(char const*) + 15248
+  8  0x1026c62e8  main + 9424
+  ld: Assertion failed: (false && "compact unwind compressed function offset doesn't fit in 24 bits"), function operator(), file Layout.cpp, line 5758.
+  clang: error: linker command failed with exit code 1 (use -v to see invocation)
+/Users/diogocsantos/.nuget/packages/microsoft.dotnet.ilcompiler/8.0.0/build/Microsoft.NETCore.Native.targets(364,5): error MSB3073: The command ""clang" "obj/Release/net8.0/osx-arm64/native/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb.o" -o "bin/Release/net8.0/osx-arm64/native/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb" -exported_symbols_list /dev/null -gz=zlib /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/sdk/libbootstrapper.o /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/sdk/libRuntime.WorkstationGC.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/sdk/libeventpipe-disabled.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/sdk/libstdc++compat.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/libSystem.Native.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/libSystem.Globalization.Native.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/libSystem.IO.Compression.Native.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/libSystem.Net.Security.Native.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/libSystem.Security.Cryptography.Native.Apple.a /Users/diogocsantos/.nuget/packages/runtime.osx-arm64.microsoft.dotnet.ilcompiler/8.0.0/framework/libSystem.Security.Cryptography.Native.OpenSsl.a -g -Wl,-rpath,'@executable_path' -ldl -lobjc -lswiftCore -lswiftFoundation -lz -licucore -lm -L/usr/lib/swift -Wl,-segprot,__THUNKS,rx,rx -framework CoreFoundation -framework CryptoKit -framework Foundation -framework Security -framework GSS" exited with code 1. [/Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb/BenchmarkDotNet.Autogenerated.csproj]
+
+// BenchmarkDotNet has failed to build the auto-generated boilerplate code.
+// It can be found in /Users/diogocsantos/curoscsharp_rider/Explicacao_Span/Explicacao_Span/bin/release/net6.0/27d4bd19-4cc3-499f-92e8-d3cf67b43fcb
+// Please follow the troubleshooting guide: https://benchmarkdotnet.org/articles/guides/troubleshooting.html
+
+// ** Remained 0 (0,0%) benchmark(s) to run. Estimated finish 2023-11-27 21:14 (0h 0m from now) **
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts/results/Explicacao_Span.Logica-report.csv
+  BenchmarkDotNet.Artifacts/results/Explicacao_Span.Logica-report-github.md
+  BenchmarkDotNet.Artifacts/results/Explicacao_Span.Logica-report.html
+
+// * Detailed results *
+Logica.ComSpan: .NET 7.0(Runtime=.NET 7.0)
+Runtime = .NET 7.0.7 (7.0.723.27404), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 730.001 ns, StdErr = 0.069 ns (0.01%), N = 15, StdDev = 0.268 ns
+Min = 729.541 ns, Q1 = 729.848 ns, Median = 729.933 ns, Q3 = 730.236 ns, Max = 730.389 ns
+IQR = 0.388 ns, LowerFence = 729.266 ns, UpperFence = 730.818 ns
+ConfidenceInterval = [729.715 ns; 730.287 ns] (CI 99.9%), Margin = 0.286 ns (0.04% of Mean)
+Skewness = 0.14, Kurtosis = 1.71, MValue = 2
+-------------------- Histogram --------------------
+[729.398 ns ; 730.532 ns) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+Logica.ComSpan: .NET 8.0(Runtime=.NET 8.0)
+Runtime = .NET 8.0.0 (8.0.23.53103), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 866.248 ns, StdErr = 0.647 ns (0.07%), N = 12, StdDev = 2.240 ns
+Min = 859.664 ns, Q1 = 866.183 ns, Median = 866.685 ns, Q3 = 867.189 ns, Max = 868.322 ns
+IQR = 1.006 ns, LowerFence = 864.673 ns, UpperFence = 868.699 ns
+ConfidenceInterval = [863.378 ns; 869.118 ns] (CI 99.9%), Margin = 2.870 ns (0.33% of Mean)
+Skewness = -1.98, Kurtosis = 6.33, MValue = 2
+-------------------- Histogram --------------------
+[858.380 ns ; 869.607 ns) | @@@@@@@@@@@@
+---------------------------------------------------
+
+Logica.ComSpan: NativeAOT 7.0(Runtime=NativeAOT 7.0)
+Runtime = ; GC = 
+There are not any results runs
+
+Logica.ComSpan: NativeAOT 8.0(Runtime=NativeAOT 8.0)
+Runtime = ; GC = 
+There are not any results runs
+
+Logica.SemSpan: .NET 7.0(Runtime=.NET 7.0)
+Runtime = .NET 7.0.7 (7.0.723.27404), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 838.896 ns, StdErr = 0.126 ns (0.02%), N = 14, StdDev = 0.471 ns
+Min = 838.149 ns, Q1 = 838.600 ns, Median = 838.888 ns, Q3 = 839.102 ns, Max = 839.776 ns
+IQR = 0.502 ns, LowerFence = 837.847 ns, UpperFence = 839.856 ns
+ConfidenceInterval = [838.365 ns; 839.427 ns] (CI 99.9%), Margin = 0.531 ns (0.06% of Mean)
+Skewness = 0.11, Kurtosis = 2.12, MValue = 2
+-------------------- Histogram --------------------
+[837.893 ns ; 840.032 ns) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+Logica.SemSpan: .NET 8.0(Runtime=.NET 8.0)
+Runtime = .NET 8.0.0 (8.0.23.53103), Arm64 RyuJIT AdvSIMD; GC = Concurrent Workstation
+Mean = 838.976 ns, StdErr = 0.145 ns (0.02%), N = 14, StdDev = 0.542 ns
+Min = 838.180 ns, Q1 = 838.601 ns, Median = 838.882 ns, Q3 = 839.118 ns, Max = 840.250 ns
+IQR = 0.517 ns, LowerFence = 837.826 ns, UpperFence = 839.893 ns
+ConfidenceInterval = [838.365 ns; 839.587 ns] (CI 99.9%), Margin = 0.611 ns (0.07% of Mean)
+Skewness = 0.81, Kurtosis = 2.96, MValue = 2
+-------------------- Histogram --------------------
+[837.885 ns ; 840.545 ns) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+Logica.SemSpan: NativeAOT 7.0(Runtime=NativeAOT 7.0)
+Runtime = ; GC = 
+There are not any results runs
+
+Logica.SemSpan: NativeAOT 8.0(Runtime=NativeAOT 8.0)
+Runtime = ; GC = 
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet v0.13.10, macOS Sonoma 14.1 (23B74) [Darwin 23.1.0]
+Apple M2, 1 CPU, 8 logical and 8 physical cores
+.NET SDK 8.0.100
+  [Host]   : .NET 6.0.18 (6.0.1823.26907), Arm64 RyuJIT AdvSIMD
+  .NET 7.0 : .NET 7.0.7 (7.0.723.27404), Arm64 RyuJIT AdvSIMD
+  .NET 8.0 : .NET 8.0.0 (8.0.23.53103), Arm64 RyuJIT AdvSIMD
+
+
+| Method  | Job           | Runtime       | Mean     | Error   | StdDev  | Ratio | RatioSD |
+|-------- |-------------- |-------------- |---------:|--------:|--------:|------:|--------:|
+| ComSpan | .NET 7.0      | .NET 7.0      | 730.0 ns | 0.29 ns | 0.27 ns |  0.84 |    0.00 |
+| ComSpan | .NET 8.0      | .NET 8.0      | 866.2 ns | 2.87 ns | 2.24 ns |  1.00 |    0.00 |
+| ComSpan | NativeAOT 7.0 | NativeAOT 7.0 |       NA |      NA |      NA |     ? |       ? |
+| ComSpan | NativeAOT 8.0 | NativeAOT 8.0 |       NA |      NA |      NA |     ? |       ? |
+|         |               |               |          |         |         |       |         |
+| SemSpan | .NET 7.0      | .NET 7.0      | 838.9 ns | 0.53 ns | 0.47 ns |  1.00 |    0.00 |
+| SemSpan | .NET 8.0      | .NET 8.0      | 839.0 ns | 0.61 ns | 0.54 ns |  1.00 |    0.00 |
+| SemSpan | NativeAOT 7.0 | NativeAOT 7.0 |       NA |      NA |      NA |     ? |       ? |
+| SemSpan | NativeAOT 8.0 | NativeAOT 8.0 |       NA |      NA |      NA |     ? |       ? |
+
+Benchmarks with issues:
+  Logica.ComSpan: NativeAOT 7.0(Runtime=NativeAOT 7.0)
+  Logica.ComSpan: NativeAOT 8.0(Runtime=NativeAOT 8.0)
+  Logica.SemSpan: NativeAOT 7.0(Runtime=NativeAOT 7.0)
+  Logica.SemSpan: NativeAOT 8.0(Runtime=NativeAOT 8.0)
+
+// * Warnings *
+BaselineCustomAnalyzer
+  Summary -> A question mark '?' symbol indicates that it was not possible to compute the (Ratio, RatioSD) column(s) because the baseline value is too close to zero.
+
+// * Hints *
+Outliers
+  Logica.ComSpan: .NET 8.0 -> 3 outliers were removed, 4 outliers were detected (863.02 ns, 875.16 ns..889.23 ns)
+  Logica.SemSpan: .NET 7.0 -> 1 outlier  was  removed (843.62 ns)
+  Logica.SemSpan: .NET 8.0 -> 1 outlier  was  removed (844.51 ns)
+
+// * Legends *
+  Mean    : Arithmetic mean of all measurements
+  Error   : Half of 99.9% confidence interval
+  StdDev  : Standard deviation of all measurements
+  Ratio   : Mean of the ratio distribution ([Current]/[Baseline])
+  RatioSD : Standard deviation of the ratio distribution ([Current]/[Baseline])
+  1 ns    : 1 Nanosecond (0.000000001 sec)
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:01:32 (92.54 sec), executed benchmarks: 4
+
+Global total time: 00:05:30 (330.78 sec), executed benchmarks: 4
+// * Artifacts cleanup *
+Artifacts cleanup is finished
