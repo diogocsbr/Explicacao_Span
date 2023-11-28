@@ -18,22 +18,22 @@ namespace Explicacao_Span;
 public class Logica
 {
 
-    private int[] _data;
+    private int[] _dados;
 
     [GlobalSetup]
     public void Setup()
     {
-        _data = new int[1000];
-        for (int i = 0; i < _data.Length; i++)
+        _dados = new int[1000];
+        for (int i = 0; i < _dados.Length; i++)
         {
-            _data[i] = i;
+            _dados[i] = i;
         }
     }
 
     [Benchmark]
     public void ComSpan()
     {
-        Span<int> span = _data.AsSpan();
+        Span<int> span = _dados.AsSpan();
         for (int i = 0; i < span.Length; i++)
         {
             span[i] = span[i] * 2;
@@ -43,9 +43,9 @@ public class Logica
     [Benchmark]
     public void SemSpan()
     {
-        for (int i = 0; i < _data.Length; i++)
+        for (int i = 0; i < _dados.Length; i++)
         {
-            _data[i] = _data[i] * 2;
+            _dados[i] = _dados[i] * 2;
         }
     }
 }
